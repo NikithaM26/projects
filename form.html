@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Share Your Travel</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Share Your Travels</h1>
+      <p>Let us know where you've been</p>
+     </header>
+    <section class="content">
+      <section class="section-header">
+        <h2>PHOTO DETAILS</h2>
+      </section>
+      <section class="section-body-top">
+        <form>
+          <label for="title">Title:</label><br>
+          <input type="text" id="title" name="title" size="109" placeholder="Enter a caption for you photo"><br><br>
+          <label for="description">Desription:</label><br>
+          <textarea name="description" id="description" cols="99" rows="10" placeholder="Enter description"></textarea><br>
+        
+      </section>
+      <br>
+      <section class="section-body-mid">
+        <section class="aside">
+          
+            <legend>Copyright?</legend>
+            <input type="radio" id="copyright1" name="copyright" value="copyright1">
+            <label for="copyright1">All rights reserved</label><br>
+            <input type="radio" id="copyright2" name="copyright" value="copyright2">
+            <label for="copyright2">Creative Commons</label><br><br>
+            <legend>Creative Common Types</legend> 
+            <input type="checkbox" id="creative1" name="creative1">
+            <label for="creative1">Attribution</label><br>
+            <input type="checkbox" id="creative2" name="creative2">
+            <label for="creative2">Non-commercial</label><br>
+            <input type="checkbox" id="creative3" name="creative3">
+            <label for="creative3">No Derivative Works</label><br>
+
+        
+        </section>
+        <div  class="form1">
+          <label for="continent">Continent:</label><br>
+          <select name="continent" id="continent">
+            <option value="0">Select</option>
+            <option value="1">Asia</option>
+            <option value="2">Africa</option>
+            <option value="3">North America</option>
+            <option value="4">South America</option>
+            <option value="5">Australia</option>
+            <option value="6">Europe</option>
+          </select><br><br>
+          <label for="country">Country:</label><br>
+          <select name="country" id="country">
+            <option value="0">Select</option>
+            <option value="1">India</option>
+            <option value="2">USA</option>
+            <option value="3">Germany</option>
+          </select><br><br>
+          <label for="city">City:</label><br>
+          <input type="text" name="city" id="city" size="19">
+            <br><br>
+        </div>
+        <div class="license">
+          <label for="license">I accept the software license</label>
+          <input type="checkbox" name="license" id="license"><br>
+        </div>
+      </section>
+      <section class="section-body-bottom">
+        <section class="aside">
+          
+            <label for="date">Date Taken:</label><br>
+            <input type="date" id="date"><br>
+            <label for="time">Time Taken:</label><br>
+            <input type="time" id="time"><br>
+          
+        </section>
+        
+          <label for="rate">Rate this photo:</label><br>
+          <input type="text" id="rate" size="3"><br>
+          <label for="color">Color Collection:</label><br>
+          <input type="color" id="color"><br>
+        
+      </section>
+      <footer>
+        <input type="submit" value="Submit" class="button">
+        <input type="reset" value="Clear Form" class="button">
+      </footer>
+    </form>
+  </section>
+  </body>
+</html>
