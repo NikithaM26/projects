@@ -1,0 +1,85 @@
+:root {
+  --mainBg : #fff;
+  --green : #87F50C;
+  --black : #111;
+  --gray : #c0c0c0;
+  --red : rgb(255, 0, 0);
+  --dark : #404040;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.title {
+  text-align: center;
+  padding: 50px 225px 20px;
+}
+.title h1 {
+  margin: 0;
+  padding: 10;
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: bold;
+}
+.container {
+  width: 60%;
+  height: 400px;
+  background: #fff;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+.formBox {
+  width: 100%;
+  padding: 60px 240px;
+  box-sizing: border-box;
+  height: 400px;
+  background:var(--green);
+}
+.formBox p {
+  padding: 0;
+  font-weight: bold;
+  color: #003399;
+}
+.formBox input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.formBox input[type="text"],
+.formBox input[type="Password"] {
+  border: none;
+  border-bottom: 2px solid var(--green);
+  outline: none;
+  height: 40px;
+  margin: 8px 0;
+  border-radius: 5px;
+}
+
+.formBox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background: #262626;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+  position: center;
+  margin-left: 25%;
+}
+.formBox input[type="submit"]:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  border-color: #fff;
+}
+.formBox a {
+  padding-left: 325px;
+  padding-bottom: 200px;
+  color: #262626;
+  font-size: 13px;
+  font-weight: bold;
+}

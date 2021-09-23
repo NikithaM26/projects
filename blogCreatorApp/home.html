@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/home.css">
+  <title>Blog Creator App</title>
+  <link rel="icon" href="./images/Blogpost.jpg" type="image/icon">
+</head>
+<body>
+  <div class="sidenav">
+    <a href="#about" id="defaultOpen" class="link" onclick="switchFunction(event, 'About')">About</a>
+    <a href="#info" class="link" onclick="switchFunction(event, 'Blogging')">Blogging</a>
+    <a href="./login.php">Create Blogs</a>
+    <a href="#contact" class="link" onclick="switchFunction(event, 'Contact')">Contact</a>
+    <a href="./index.html">Home</a>
+  </div>
+
+  <div id="About" class="about content">
+    <h1>About Us</h1>
+    <p>Create your blog is a simple blog creator app, that enables the user to fill in some details 
+      along with the article, which is rendered as a beautiful blog!<br><br>
+
+      Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, 
+      enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut
+      metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+      ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum 
+      rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
+      luctus pulvinar, hendrerit id, lorem. <br><br>
+      
+      Maecenas nec odio et ante tincidunt tempus. 
+      Donec vitae sapien ut libero venenatis faucibus. 
+      Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris 
+      sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit 
+      cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, 
+      scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu 
+      turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
+      cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, 
+      suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+      Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. 
+      Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. 
+      Cras id dui. Aenean ut <br></p>
+  </div>
+
+  <div id="Blogging" class="info content">
+    <h1>What is blogging?</h1>
+      <p>A blog (a truncation of "weblog")[1] is a discussion or informational website published on the 
+        World Wide Web consisting of discrete, often informal diary-style text entries (posts). 
+        Posts are typically displayed in reverse chronological order, so that the most recent post appears 
+        first, at the top of the web page. Until 2009, blogs were usually the work of a single individual,
+        [citation needed] occasionally of a small group, and often covered a single subject or topic. 
+        In the 2010s, "multi-author blogs" (MABs) emerged, featuring the writing of multiple authors and 
+        sometimes professionally edited. MABs from newspapers, other media outlets, universities, think 
+        tanks, advocacy groups, and similar institutions account for an increasing quantity of blog 
+        traffic. The rise of Twitter and other "microblogging" systems helps integrate MABs and 
+        single-author blogs into the news media. Blog can also be used as a verb, meaning to maintain or 
+        add content to a blog. <br><br>
+  
+        The emergence and growth of blogs in the late 1990s coincided with the 
+        advent of web publishing tools that facilitated the posting of content by 
+        non-technical users who did not have much experience with HTML or computer programming. 
+        Previously, a knowledge of such technologies as HTML and File Transfer Protocol had been required to
+        publish content on the Web, and early Web users therefore tended to be hackers and computer 
+        enthusiasts. In the 2010s, the majority are interactive Web 2.0 websites, allowing visitors to 
+        leave online comments, and it is this interactivity that distinguishes them from other static 
+        websites.[2] In that sense, blogging can be seen as a form of social networking service. Indeed, 
+        bloggers not only produce content to post on their blogs but also often build social relations with
+         their readers and other bloggers.[3] 
+        However, there are high-readership blogs which do not allow comments.<br><br>
+        </p>
+        <p>Want to know more? <a href="https://en.wikipedia.org/wiki/Blog" target="_blank"  style="text-decoration: none;color: chartreuse;">Click here</a></p>
+        <a href="https://www.bloggingbasics101.com/how-do-i-start-a-blog/" target="_blank" style="text-decoration: none;color:#111;">Learn to write good blogs --></a>
+  </div>
+  <div class="contact content" id="Contact">
+    <h1>Reach out at --></h1>
+    <form method="POST">
+      <input type="email" placeholder="Enter your email id"><br>
+      <input type="text" maxlength="100" placeholder="What is your query?"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script>
+    function switchFunction(evt, name) {
+      var i, content, links;
+      content = document.getElementsByClassName("content");
+      for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+      }
+      links = document.getElementsByClassName("link");
+      for (i = 0; i < links.length; i++) {
+        links[i].className = links[i].className.replace(" active", "");
+      }
+      document.getElementById(name).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

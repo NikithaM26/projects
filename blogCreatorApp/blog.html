@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/Blogpost.jpg" type="image/icon">
+  <title>Blog Creator App</title>
+  <link rel="stylesheet" href="./css/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Create your blog</h1>
+  </header>
+  <div class="form">
+    <form id="form" method="POST" action="./preview.php">
+      <h2>Contact Details</h2>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+      <input type="tel" name="tel" id="tel" placeholder="Enter your contact number" required><br>
+      <hr>
+      <br>
+      <h2>Blog details </h2>
+      <input type="text" id="article-title" name="article-title" placeholder="Enter Title of the blog" required><br>
+      <textarea name="article" id="article" cols="101" rows="20" placeholder="Blog word 100 < count < 500 ..Also place a br tag to differentiate paragraphs" 
+      required onfocus="counter()"></textarea><p hidden id="count">Word Count exceeded</p><br>
+      <input type="text" name="pic-url" placeholder="Enter valid url of the photo" required>
+      <input type="text" name="second-pic" placeholder="Enter valid url of the photo" required>
+      <br>
+      <div class="btn-box">
+        <input type="reset" class="btn pos">
+        <input type="submit" name="submit" id="submit" class="btn pos" value="Submit">
+        <button name="back" id="back" class="btn neg" onclick="location.href='./index.html'">Back</button>
+      </div>
+    </form>
+  </div>
+  <script>
+    function counter() {
+      var blog = document.getElementById("article").value;
+      if(blog.length > 500) {
+        document.getElementById("count").removeAttribute('hidden');
+      }
+    }
+
+  </script>
+</body>
+</html>
