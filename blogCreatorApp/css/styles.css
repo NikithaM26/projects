@@ -1,0 +1,53 @@
+:root {
+  --mainBg : #fff;
+  --green : #87F50C;
+  --black : #111;
+}
+body {
+  background: var(--mainBg);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2% 0 5%;
+}
+.top-container img {
+  width: 850px;
+  height: 700px;
+}
+.top-container .top-header-text {
+  text-align: left;
+  font-size: 100px;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: 5px 5px 3px var(--green);
+}
+.create {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--black);
+  text-shadow: none;
+  border: 1px solid var(--black);
+  padding: 3% 10%;
+  margin: 7px;
+  text-align: center;
+}
+
+.create:hover {
+  text-shadow: 5px 5px 4px var(--green);
+  text-transform: uppercase;
+  border: 2px solid var(--green);
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--green);
+}
+
+footer a:visited {
+  color: var(--green);
+}
